@@ -1,15 +1,17 @@
 <!-- <h1 class="mat-display-1">{{ startingTeamMessage }}</h1> -->
-<section class="mat-typography">
-  <h1>{{ startingTeamMessage }}</h1>
-</section>
+<div class="container">
+  <section class="mat-typography">
+    <h1>{{ startingTeamMessage }}</h1>
+  </section>
 
-<mat-grid-list cols="5" gutterSize="5px">
-  <mat-grid-tile
-    *ngFor="let tile of tiles"
-    [colspan]="tile.cols"
-    [rowspan]="tile.rows"
-    [style.background]="tile.color"
-  >
-    {{ tile.text }}
-  </mat-grid-tile>
-</mat-grid-list>
+  <mat-grid-list cols="5" gutterSize="5px">
+    <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color"
+    >
+      {{ tile.text }}
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
